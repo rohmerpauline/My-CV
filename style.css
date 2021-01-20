@@ -1,27 +1,173 @@
+/*HEADER*/
+header {
+    text-align: center;
+}
+a:hover {
+    text-decoration: underline;
+}
+#titre {
+    color: #023859;
+    font-size: 50px;
+    font-weight: bolder;
+}
+#cv {
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+/*NAV*/
+nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.menu {
+    list-style-type: none;
+    background-color: #023859;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+.menu_element {
+    display: inline;
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+.link_menu {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*BODY*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+/*Dispatch des colonnes*/
 .column {
-    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: grid;
-    grid-template-columns: 20%;
-    gap: 40px;
-    justify-items: stretch;
-}
-.gauche {
-    grid-column-start: 2/3;
-    background-color: #01260A;
-    color: #ffffff;
-}
-.droite {
-    grid-column-start: 3;
-    background-color: #D2D5D9;
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-template-columns: 35% 1fr;
+    align-items: stretch;
+    border: 1px solid #000000;
 }
 /*Colonne de gauche*/
+.gauche {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-items: stretch;
+    background-color: #023859;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+/*Colonne de droite*/
+.droite {
+    grid-column-start: 2;
+    background-color: #F2F2F2;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+/*CONTENU COLONNE DE GAUCHE*/
 /*Style de la photo*/
 #photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
     width: 80%;
-    text-align: center;
 }
+/*style de l'adresse*/
+#adress {
+    text-align: center;
+    line-height: 150%;
+}
+/*style du nom*/
+#nom {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/*style des infos perso*/
+#infoperso {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 150%;
+}
+/*style titres colonne de gauche*/
+.asset {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size : 20px;
+}
+/*Style listes colonne de gauche*/
+.bullet {
+    list-style-type: none;
+}
+.inline {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+.langues {
+    line-height: 150%;
+}
+.listheight {
+    line-height: 150%;
+    font-weight: 100;
+    font-style: italic;
+}
+.progressheight {
+    line-height: 80%;
+}
+/*CONTENU COLONNE DE DROITE*/
+/*Style titres section cv*/
+.titrecv {
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.titremarge {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* Style nom de l'emploi*/
+.emploi {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#023859;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+/*Style company et date*/
+.company {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 18px;
+}
+/*Style des missions des postes*/
+.mission {
+    text-align: justify;
+    padding-right: 50px;
+    font-weight: lighter;
+    letter-spacing: 0,3px;
+    line-height: 150%;
+    font-size: 15px;
+}
+
