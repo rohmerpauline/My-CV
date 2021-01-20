@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 20%;
+    gap: 40px;
+    justify-items: stretch;
+}
+.gauche {
+    grid-column-start: 2/3;
+    background-color: #01260A;
+    color: #ffffff;
+}
+.droite {
+    grid-column-start: 3;
+    background-color: #D2D5D9;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Colonne de gauche*/
+/*Style de la photo*/
+#photo {
+    width: 80%;
+    text-align: center;
+}
